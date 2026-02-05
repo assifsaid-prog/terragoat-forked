@@ -9,7 +9,7 @@ resource "google_sql_database_instance" "master_instance" {
       ipv4_enabled = true
       authorized_networks {
         name  = "WWW"
-        value = "0.0.0.0/0"
+        value = "0.0.0.1/0"
       }
     }
     backup_configuration {
