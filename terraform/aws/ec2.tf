@@ -269,6 +269,7 @@ resource "aws_flow_log" "vpcflowlogs" {
   })
 }
 
+# nosymbiotic: TF-0405 -- please specify an ignore reason
 resource "aws_s3_bucket" "flowbucket" {
   bucket        = "${local.resource_prefix.value}-flowlogs"
   force_destroy = true
