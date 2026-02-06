@@ -6,6 +6,7 @@ resource "azurerm_managed_disk" "example" {
   create_option        = "Empty"
   disk_size_gb         = 1
   encryption_settings {
+    # nosymbiotic: TF-0451 -- please specify an ignore reason
     enabled = false
   }
   tags = {
