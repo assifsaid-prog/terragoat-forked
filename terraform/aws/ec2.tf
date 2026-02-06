@@ -1,3 +1,4 @@
+# nosymbiotic: TF-0187 -- please specify an ignore reason
 resource "aws_instance" "web_host" {
   # ec2 have plain text secrets in user data
   ami           = "${var.ami}"
