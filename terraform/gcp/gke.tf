@@ -193,7 +193,7 @@ resource "google_container_node_pool" "custom_node_pool18" {
   cluster  = google_container_cluster.workload_cluster.name
   location = var.region
 
-  # nosymbiotic: TF-0331 -- please specify an ignore reason
+  # nosymbiotic: TF-0072 -- please specify an ignore reason
   node_config {
     image_type = "Ubuntu"
   }
