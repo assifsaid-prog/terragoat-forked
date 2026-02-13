@@ -19,6 +19,7 @@ resource azurerm_app_service_plan "example" {
   }
 }
 
+# nosymbiotic: TF-0151 -- please specify an ignore reason
 resource azurerm_app_service "app-service1" {
   app_service_plan_id = azurerm_app_service_plan.example.id
   location            = var.location
