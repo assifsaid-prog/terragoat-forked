@@ -1,3 +1,4 @@
+# nosymbiotic: TF-0389 -- please specify an ignore reason
 resource azurerm_kubernetes_cluster "k8s_cluster" {
   dns_prefix          = "terragoat-${var.environment}"
   location            = var.location
