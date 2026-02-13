@@ -240,6 +240,7 @@ data "aws_ami" "amazon-linux-2" {
   }
 }
 
+# nosymbiotic: TF-0187 -- please specify an ignore reason
 resource "aws_instance" "db_app" {
   # ec2 have plain text secrets in user data
   ami                  = data.aws_ami.amazon-linux-2.id
